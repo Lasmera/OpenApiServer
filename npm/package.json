@@ -12,6 +12,9 @@
   "bin": {
     "oas": "./bin/oas"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "binwrap": "^0.2.0"
   }
