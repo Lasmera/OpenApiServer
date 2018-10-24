@@ -61,7 +61,7 @@ jobs:
         - docker
       env:
         - VERSION=$(cat .version)
-        - DOCKER_IMAGE=nbatrakov/oas
+        - DOCKER_IMAGE=lasmera/oas
       script:
         - dotnet publish ./src/App -r linux-x64 /property:Version=$VERSION -o ../../dist/docker
         - docker build -t $DOCKER_IMAGE:$VERSION -t $DOCKER_IMAGE:latest .
